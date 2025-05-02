@@ -1,0 +1,7 @@
+namespace: traefik
+resources:
+  - 00-account.yml
+  - 00-role.yml
+  - 01-role-binding.yml
+  - 02-traefik-services.yml
+  - 02-traefik.yml
