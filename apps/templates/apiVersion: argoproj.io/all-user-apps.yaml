@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: all-user-apps
+  namespace: argocd
+  # finalizers:
+  # - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: traefik
+    server: {{ .Values.spec.destination.server }}
+  project: default
+  source:
+    path: appsets
+    repoURL: https://github.com/heymikeey/gitops-lab.git
+    targetRevision: {{ .Values.spec.source.targetRevision }}
