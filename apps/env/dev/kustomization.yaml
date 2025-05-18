@@ -1,0 +1,5 @@
+resources:
+  - ../../base/gitops-appset.yaml
+
+patchesStrategicMerge:
+  - appset-patch.yaml
