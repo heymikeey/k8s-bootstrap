@@ -13,6 +13,6 @@ spec:
   source:
     path: PLACEHOLDER_PATH  # overridden via patch
     repoURL: https://github.com/heymikeey/gitops-lab.git
-    targetRevision: {{ .Values.spec.source.targetRevision }}
+    targetRevision: HEAD
   syncPolicy:
     automated: {}
