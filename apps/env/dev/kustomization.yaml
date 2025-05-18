@@ -1,5 +1,5 @@
 resources:
-  - ../../base/gitops-appset.yaml
+  - ../../base/all-user-apps.yaml
 
 patchesStrategicMerge:
-  - appset-patch.yaml
+  - all-user-apps-patch.yaml
