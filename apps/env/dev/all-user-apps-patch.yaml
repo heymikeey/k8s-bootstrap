@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: gitops-appsets-dev
+  name: all-user-apps-dev
   labels:
     environment: dev
 spec:
