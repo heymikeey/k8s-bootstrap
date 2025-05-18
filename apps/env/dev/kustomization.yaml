@@ -1,2 +1,5 @@
 resources:
-  - ../../base/all-user-apps.yaml
+  - ../../base
+
+patches:
+  - path: all-user-apps-patch.yaml
