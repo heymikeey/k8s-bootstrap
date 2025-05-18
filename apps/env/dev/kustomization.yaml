@@ -1,5 +1,2 @@
 resources:
   - ../../base/all-user-apps.yaml
-
-patchesStrategicMerge:
-  - all-user-apps-patch.yaml
