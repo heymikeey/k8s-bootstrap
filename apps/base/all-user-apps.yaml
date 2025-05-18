@@ -11,6 +11,8 @@ spec:
     server: {{ .Values.spec.destination.server }}
   project: default
   source:
-    path: appsets
+    path: PLACEHOLDER_PATH  # overridden via patch
     repoURL: https://github.com/heymikeey/gitops-lab.git
     targetRevision: {{ .Values.spec.source.targetRevision }}
+  syncPolicy:
+    automated: {}
